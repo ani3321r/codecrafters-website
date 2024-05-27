@@ -1,3 +1,5 @@
+import AboutUs from "@/components/AboutUs";
+import FooterNew from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 
@@ -7,7 +9,7 @@ export default function Home() {
       <h1 className="text-2xl text-center"></h1>
       <HeroSection />
       <Navbar />
-
+      <FooterNew/>
       </main>
   );
 }

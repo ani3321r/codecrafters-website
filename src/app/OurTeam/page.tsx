@@ -6,6 +6,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
 import products from "@/data/ourTeam.json";
 import Navbar from "@/components/Navbar";
+import FooterNew from "@/components/Footer";
 
 function Page() {
   return (
@@ -46,6 +47,7 @@ function Page() {
           </CardContainer>
         ))}
       </div>
+      <FooterNew/>
     </div>
   );
 }
