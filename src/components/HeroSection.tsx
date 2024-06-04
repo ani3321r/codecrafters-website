@@ -14,7 +14,7 @@ export function HeroSection() {
         transition={{
           delay: 0.3,
           duration: 0.8,
-          ease: 'easeInOut',
+          ease: 'easeInOut'
         }}
         className='relative flex flex-col items-center justify-center gap-4 px-4'
       >

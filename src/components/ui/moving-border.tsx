@@ -5,7 +5,7 @@ import {
   useAnimationFrame,
   useMotionTemplate,
   useMotionValue,
-  useTransform,
+  useTransform
 } from 'framer-motion';
 import { useRef } from 'react';
 import { cn } from '@/utils/cn';
@@ -36,7 +36,7 @@ export function Button({
         containerClassName
       )}
       style={{
-        borderRadius: borderRadius,
+        borderRadius: borderRadius
       }}
       {...otherProps}
     >
@@ -60,7 +60,7 @@ export function Button({
           className
         )}
         style={{
-          borderRadius: `calc(${borderRadius} * 0.96)`,
+          borderRadius: `calc(${borderRadius} * 0.96)`
         }}
       >
         {children}
@@ -129,7 +129,7 @@ export const MovingBorder = ({
           top: 0,
           left: 0,
           display: 'inline-block',
-          transform,
+          transform
         }}
       >
         {children}

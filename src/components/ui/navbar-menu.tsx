@@ -10,14 +10,14 @@ const transition = {
   damping: 11.5,
   stiffness: 100,
   restDelta: 0.001,
-  restSpeed: 0.001,
+  restSpeed: 0.001
 };
 
 export const MenuItem = ({
   setActive,
   active,
   item,
-  children,
+  children
 }: {
   setActive: (item: string) => void;
   active: string | null;
@@ -62,7 +62,7 @@ export const MenuItem = ({
 
 export const Menu = ({
   setActive,
-  children,
+  children
 }: {
   setActive: (item: string | null) => void;
   children: React.ReactNode;
@@ -81,7 +81,7 @@ export const ProductItem = ({
   title,
   description,
   href,
-  src,
+  src
 }: {
   title: string;
   description: string;

@@ -5,13 +5,13 @@ import {
   useScroll,
   useTransform,
   useSpring,
-  MotionValue,
+  MotionValue
 } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export const HeroParallax = ({
-  products,
+  products
 }: {
   products: {
     title: string;
@@ -25,7 +25,7 @@ export const HeroParallax = ({
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ['start start', 'end start'],
+    offset: ['start start', 'end start']
   });
 
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
@@ -65,7 +65,7 @@ export const HeroParallax = ({
           rotateX,
           rotateZ,
           translateY,
-          opacity,
+          opacity
         }}
         className=''
       >
@@ -119,7 +119,7 @@ export const Header = () => {
 
 export const ProductCard = ({
   product,
-  translate,
+  translate
 }: {
   product: {
     title: string;
@@ -131,10 +131,10 @@ export const ProductCard = ({
   return (
     <motion.div
       style={{
-        x: translate,
+        x: translate
       }}
       whileHover={{
-        y: -20,
+        y: -20
       }}
       key={product.title}
       className='group/product relative h-96 w-[30rem] flex-shrink-0'

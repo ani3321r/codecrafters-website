@@ -7,7 +7,7 @@ import React, {
   useState,
   useContext,
   useRef,
-  useEffect,
+  useEffect
 } from 'react';
 
 const MouseEnterContext = createContext<
@@ -17,7 +17,7 @@ const MouseEnterContext = createContext<
 export const CardContainer = ({
   children,
   className,
-  containerClassName,
+  containerClassName
 }: {
   children?: React.ReactNode;
   className?: string;
@@ -53,7 +53,7 @@ export const CardContainer = ({
           containerClassName
         )}
         style={{
-          perspective: '1000px',
+          perspective: '1000px'
         }}
       >
         <div
@@ -66,7 +66,7 @@ export const CardContainer = ({
             className
           )}
           style={{
-            transformStyle: 'preserve-3d',
+            transformStyle: 'preserve-3d'
           }}
         >
           {children}
@@ -78,7 +78,7 @@ export const CardContainer = ({
 
 export const CardBody = ({
   children,
-  className,
+  className
 }: {
   children: React.ReactNode;
   className?: string;

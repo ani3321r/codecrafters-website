@@ -84,7 +84,7 @@ const BottomGradient = () => {
 
 const LabelInputContainer = ({
   children,
-  className,
+  className
 }: {
   children: React.ReactNode;
   className?: string;
